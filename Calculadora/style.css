@@ -1,0 +1,106 @@
+@font-face {
+    font-family: SUSE;
+    src: url("fonts/SUSE-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin: auto;
+    font-family: "SUSE";
+    user-select: none;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-container {
+    flex-direction: column;
+    height: 100vh;
+    background-color: #6B818C;
+}
+
+.title-container {
+    margin-bottom: 50px;
+    background-color: #63D471;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#title {
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0;
+    color: #4d4d4d;
+}
+
+.calculator-container {
+    flex-direction: column;
+    background-color: #35605A;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.screen-container {
+    margin-bottom: 20px;
+    background-color: #D8E4FF;
+    border-radius: 10px;
+}
+
+#screen {
+    padding: 8px;
+    border: 2px;
+    font-size: 28px;
+    margin: 0;
+    color: #4d4d4d;
+}
+
+.calculator-buttons {
+    max-height: 200px;
+    flex-flow: column wrap;
+}
+
+.calculator-groups, .calculator-buttons {
+    gap: 10px;
+    
+}
+
+.calculator-numbers {
+    flex-wrap: wrap-reverse;
+    max-width: 140px;
+}
+
+.calculator-operators {
+    flex-direction: column-reverse;
+}
+
+.calculator-delete, .calculator-equals {
+    height: 90px;
+}
+
+
+.buttons {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4d4d4d;
+    background-color: #F39237;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.buttons:active {
+    background-color: #d58235;
+}
+
+.zero {
+    width: 90px;
+}
+
+.delete, .equals {
+    height: 90px;
+}
